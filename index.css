@@ -1,0 +1,134 @@
+
+#hero{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    background-color: #E5F0F7;
+    height: 100vh;
+   margin-top: -100px;
+    
+    
+    padding: 50px;
+    
+}
+.hero_text{
+    flex: 1;
+   text-align: center;
+    margin-right: 80px;
+}
+.hero_text h2{
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+
+}
+
+.hero_text p{
+   
+    font-weight: lighter;
+    color: #444444;
+    letter-spacing: 2px;
+   
+}
+.hero_text button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#hero_image{
+    margin-top: 70px;
+    width: 40vw;
+    height:50vh;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+#services{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#services h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+#services h1 span {
+    color:rgb(255, 165, 0);
+}
+#services ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+#services ul li{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+#services ul li a{
+    text-decoration: none;
+}
+.service p{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px;
+   
+}
+.service img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 0.7;
+   
+
+}
+.service img:hover{
+    opacity: 1;
+}
+#contact{
+    background-color: #E5F0F7; 
+    padding: 20px;
+    text-align: center;
+
+}
+#contact h1{
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+
+@media(max-width:768px)
+{
+    .hero{
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+        
+    }
+    .hero_text{
+        margin-right: 0;
+        
+    }
+   
+   
+}
