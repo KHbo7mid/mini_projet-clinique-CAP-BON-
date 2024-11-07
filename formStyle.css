@@ -1,0 +1,74 @@
+#register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f9f9f9 ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2em;
+    width: 90%;
+    max-width: 500px;
+    margin:  2em auto;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+#register h2{
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+#registerForm label{
+    font-weight:  bold;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5em;
+}
+#registerForm input{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    
+}
+#registerForm button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+
+}
+.Error {
+    display: block;
+    font-size: 0.85rem;
+    color: #d9534f;
+    margin-top: -0.3rem;
+    margin-bottom: 1rem;
+   
+}
+.iconSuccess{
+    position: relative;
+    right:-100% ;
+    top: -15px;
+    font-size: 16px;
+    display: none;
+}
+.iconFailure {
+    position: relative;
+    right: -100%;
+    top: -38px;
+    font-size: 16px;
+    display: none;
+}
+.iconSuccess i {
+    color: green;
+}
+
+.iconFailure i {
+    color: red;
+}

@@ -1,3 +1,4 @@
+
 #title{
     margin-top: 150px;
     text-align: center;
@@ -38,28 +39,28 @@ text-decoration: underline;
     margin-right: 20px;
     border-radius: 10px;
 }
-#tableau,#equipe{
+.tableau,#equipe{
     padding: 40px;
     background-color: #f0f0f0;
     margin-top: 20px;
     text-align: center; 
 }
 
-#tableau table {
+.tableau table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
 }
-#tableau th, #tableau td {
+.tableau th, .tableau td {
     border: 1px solid #ddd;
     padding: 12px;
 }
-#tableau th {
+.tableau th {
     background-color: #007DC5;
     color: white;
 }
 
-#tableau td {
+.tableau td {
     background-color: white;
 }
 #equipe ul {
@@ -84,4 +85,34 @@ text-decoration: underline;
     margin-bottom: 10px; 
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#device{
+    margin: 10px 25%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#device >p{
+    
+    font-size: 16px; 
+    color: #333;
+    margin-right: 10px;  
+}
+#selectDevice{
+    padding: 8px 12px;
+    font-size: 14px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; 
+    outline: none;
+}
+#selectDevice option{
+    font-size: 14px; 
+    padding: 8px;
 }

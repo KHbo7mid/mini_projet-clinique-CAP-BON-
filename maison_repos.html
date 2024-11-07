@@ -38,7 +38,43 @@
         <img src="./images/f4487c6be4_50192706_adobestock-259447988.jpg" alt="img2">
         <img src="./images/8p8a9598.jpg" alt="img3">
     </section>
-    <section id="tableau">
+    <section class="tableau">
+        <h2>Tarifs</h2>
+        <p>Voici nos tarifs pour les différents types de chambres dans la Maison de Repos :</p>
+      <div id="device">
+       <p> Selectionner le type de device:</p>
+        <select name="selectDevice" id="selectDevice">
+            <option value="TND" >TND</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+      </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type de Chambre</th>
+                    <th>Tarif par Nuit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chambres individuelles</td>
+                    <td class="prix" data-price="100">100 TND</td>
+                    
+                </tr>
+                <tr>
+                    <td>Chambres doubles</td>
+                    <td class="prix" data-price="80">80 TND</td>
+                </tr>
+                <tr>
+                    <td>Chambres VIP</td>
+                    <td class="prix" data-price="150">150 TND</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Les tarifs incluent l'accès aux services médicaux, aux soins personnalisés et aux activités de loisirs.</p>
+    </section>
+    <section class="tableau">
         <h2>Nombre de chambres et de lits</h2>
         <table>
             <thead>
@@ -81,5 +117,6 @@
             <p>&copy; Clinique Le Cap Bon</p>
         </footer>
     </section>
+    <script src="scriptDevice.js"></script>
 </body>
 </html>

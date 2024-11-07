@@ -35,11 +35,22 @@
 .hero_text button{
     margin-top: 10px;
     padding: 10px 20px;
+    margin-right: 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.hero_text button:hover{
+   
+    background-color: purple;
+  
+   
+}
+.hero_text button a{
+    text-decoration: none;
+    color: white;
 }
 #hero_image{
     margin-top: 70px;
@@ -115,6 +126,7 @@
     color: #007bff;
     text-decoration: underline;
 }
+
 
 
 @media(max-width:768px)
