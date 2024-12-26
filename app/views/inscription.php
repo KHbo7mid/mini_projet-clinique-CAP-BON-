@@ -1,10 +1,11 @@
+<?php include '../controllers/baseController.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="stylesheet" href="../public/css/formStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
@@ -12,7 +13,9 @@
 <body>
     <div id="register" >
         <h2>Inscription</h2>
-        <form id="registerForm">
+        <?php flash('inscription')?>
+        <form id="registerForm" action="../controllers/usersController.php" method="POST">
+            <input type="hidden" name="type" value="inscription">
             <div>
                 <label for="nom">Nom&Prenom :</label>
                 <input type="text" id="nom" name="nom" >
@@ -38,6 +41,6 @@
             <button type="submit">S'inscrire</button>
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <!-- <script src="../public/js/script.js"></script> -->
 </body>
 </html>

@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centre Medical</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/services.css">
-
-</head>
-<body>
-    <header>
-        <img src="./images/Designer.jpeg" alt="logo" id="logo">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="polyclinique.html">Polyclinique</a>
-            <a href="centre_medical.html">Centre medical</a>
-            <a href="maison_repos.html">Maison de repos</a>
-
-
-        </nav>
-    </header>
-    <section id="title">
+<?php 
+$pageTitle="Centre Medical";
+$pageStyle="services.css";
+$pageScript="scriptDevice.js";
+$content='
+ <section id="title">
         <h1>Centre Medical</h1>
         <h5>DU CLINIQUE LE CAP BON</h5>
     <hr>
@@ -37,9 +20,9 @@
         <li>Consultations spécialisées</li>
         <li>Centre de rééducation</li>
      </ul>
-     <img src="./images/Bandeau-internet-9-1200x630.png" alt="img1">
-     <img src="./images/centre_medical.jpg" alt="img2">
-     <img src="./images/rdc-ctre.jpg" alt="img3">
+     <img src="../public/images/Bandeau-internet-9-1200x630.png" alt="img1">
+     <img src="../public/images/centre_medical.jpg" alt="img2">
+     <img src="../public/images/rdc-ctre.jpg" alt="img3">
     </section>
     <section  class="tableau">
         <h2>Horaires </h2>
@@ -123,16 +106,13 @@
         <h2>Notre Équipe Médicale</h2>
         <p>Notre équipe qualifiée est composée de médecins généralistes et spécialistes pour répondre à tous vos besoins médicaux.</p>
         <ul>
-            <li><img src="./images/doctor1.jpg" alt="doctor5">Dr. Farid Ben Salah - Médecin généraliste</li>
-            <li><img src="./images/doctor3.avif" alt="doctor6">Dr. Leila Amari - Gynécologue</li>
-            <li><img src="./images/doctor2.jpeg" alt="doctor7">Dr. Amine Chahed - Orthopédiste</li>
-            <li><img src="./images/doctor4.jpg" alt="doctor8">Dr. Mona Jlassi - Nutritionniste</li>
+            <li><img src="../public/images/doctor1.jpg" alt="doctor5">Dr. Farid Ben Salah - Médecin généraliste</li>
+            <li><img src="../public/images/doctor3.avif" alt="doctor6">Dr. Leila Amari - Gynécologue</li>
+            <li><img src="../public/images/doctor2.jpeg" alt="doctor7">Dr. Amine Chahed - Orthopédiste</li>
+            <li><img src="../public/images/doctor4.jpg" alt="doctor8">Dr. Mona Jlassi - Nutritionniste</li>
         </ul>
-    </section>
-    <footer>
-        <p>&copy; Clinique Le Cap Bon</p>
-    </footer>
-    <script src="js/scriptDevice.js"></script>
+    </section>';
+    include('layout.php');
 
-</body>
-</html>
+
+?>

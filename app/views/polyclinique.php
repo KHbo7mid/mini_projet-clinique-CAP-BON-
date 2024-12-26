@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polyclinique</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/services.css">
-
-</head>
-<body>
-    <header>
-        <img src="./images/Designer.jpeg" alt="logo" id="logo">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="polyclinique.html">Polyclinique</a>
-            <a href="centre_medical.html">Centre medical</a>
-            <a href="maison_repos.html">Maison de repos</a>
-
-
-        </nav>
-    </header>
-    <section id="title">
+<?php 
+$pageTitle="Polyclinique";
+$pageStyle="services.css";
+$pageScript="scriptDevice.js";
+$content='<section id="title">
         <h1>POLYCLINIQUE</h1>
         <h5>DU CLINIQUE LE CAP BON</h5>
         <hr>
@@ -31,13 +13,13 @@
             <li>Les spécialités chirurgicales</li>
             <li>Les spécialités médicales</li>
             <li>Imagerie médicale</li>
-            <li>Laboratoire d'analyses médicales</li>
+            <li>Laboratoire d\'analyses médicales</li>
             <li>Chirurgie ambulatoire</li>
             <li>Urgences médicales</li>
         </ul>
-        <img src="./images/polyclinique1.jpg" alt="img1">
-        <img src="./images/cap_bon_sante0.jpg" alt="img2">
-        <img src="./images/hospital-3098683-1920.jpg" alt="img3">
+        <img src="../public/images/polyclinique1.jpg" alt="img1">
+        <img src="../public/images/cap_bon_sante0.jpg" alt="img2">
+        <img src="../public/images/hospital-3098683-1920.jpg" alt="img3">
 
     </section>
     <section class="tableau">
@@ -70,6 +52,8 @@
         </table>
     </section>
     <section class="tableau">
+       
+        <h2>Tarifs des Services</h2>
         <div id="device">
             <p> Selectionner le type de device:</p>
              <select name="selectDevice" id="selectDevice">
@@ -78,7 +62,6 @@
                  <option value="EUR">EUR</option>
              </select>
            </div>
-        <h2>Tarifs des Services</h2>
         <table>
             <thead>
                 <tr>
@@ -100,7 +83,7 @@
                     <td class="prix" data-price="100">100 TND</td>
                 </tr>
                 <tr>
-                    <td>Laboratoire d'analyses médicales</td>
+                    <td>Laboratoire d\'analyses médicales</td>
                     <td class="prix" data-price="60">60 TND</td>
                 </tr>
                 <tr>
@@ -118,16 +101,11 @@
         <h2>Notre Équipe Médicale</h2>
         <p>Nos médecins spécialisés vous assurent des soins de qualité dans différentes disciplines médicales.</p>
         <ul>
-            <li><img src="./images/doctor1.jpg" alt="doctor1">Dr. Ahmed Ben Ali - Cardiologue</li>
-            <li><img src="./images/doctor3.avif" alt="doctor3">Dr. Sara Toumi - Dermatologue</li>
-            <li><img src="./images/doctor2.jpeg" alt="doctor2">Dr. Karim Youssef - Chirurgien</li>
-            <li><img src="./images/doctor4.jpg" alt="doctor4">Dr. Amina Kallel - Neurologue</li>
+            <li><img src="../public/images/doctor1.jpg" alt="doctor1">Dr. Ahmed Ben Ali - Cardiologue</li>
+            <li><img src="../public/images/doctor3.avif" alt="doctor3">Dr. Sara Toumi - Dermatologue</li>
+            <li><img src="../public/images/doctor2.jpeg" alt="doctor2">Dr. Karim Youssef - Chirurgien</li>
+            <li><img src="../public/images/doctor4.jpg" alt="doctor4">Dr. Amina Kallel - Neurologue</li>
         </ul>
-    </section>
-    <footer>
-        <p>&copy; Clinique Le Cap Bon</p>
-    </footer>
-    <script src="js/scriptDevice.js"></script>
-
-</body>
-</html>
+    </section>';
+    include("layout.php");
+?>
